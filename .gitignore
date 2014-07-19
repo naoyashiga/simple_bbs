@@ -1,0 +1,34 @@
+#Editor generated
+*~
+
+*.sublime-project
+*.sublime-workspace
+
+*.swp
+
+
+# Binaries
+*.so
+*.class
+*.o
+*.jar
+
+# Misc
+*.log
+
+# Java/Scala 
+
+target/
+.ensime_lucene/
+gen/
+
+
+# TeX
+*.aux
+*.pdf
+
+# IntelliJ
+.idea
+
+# Mac OS
+.DS_Store

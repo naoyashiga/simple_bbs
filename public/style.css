@@ -1,0 +1,59 @@
+.wrapper{
+	width: 100%;
+}
+
+.content{
+	width: 80%;
+	margin: 50px auto;
+
+}
+
+form{
+	margin: 30px 0;
+}
+
+.inputBody{
+	width: 300px;
+
+}
+.commentArea{
+	width: 100%;
+	min-height: 100px;
+	background: #fff;
+	border:1px solid #efefef;
+	border-radius: 10px;
+	margin: 20px 0;
+	position: relative;
+}
+
+.commentTextArea{
+	width: 60%;
+	margin: 0 auto;
+}
+
+.commentText{
+	display: inline-block;
+	padding: 30px 0;
+	font-size:1.5em;
+	line-height: 1.3em;
+	letter-spacing: 7px;
+}
+
+.deleteCmd{
+	position: absolute;
+	top:10px;
+	right: 10px;
+	cursor:pointer;
+	color:#ccc;
+}
+
+
+.commentBottom{
+	position: absolute;
+	bottom:10px;
+	right: 30px;
+}
+
+.commentBottom li{
+	display: inline-block;
+}

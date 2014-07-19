@@ -1,0 +1,38 @@
+<div class="wrapper">
+	<div class="content">
+		<h1><%= @title %></h1>
+
+		<form method="post" action="/new">
+			<input type="text" name="name" placeholder="名前">
+			<input class="inputBody" type="text" name="body" placeholder="投稿内容" maxlength="10"><input type="submit" value="post">
+		</form>
+		<ul>
+			<% @comments.each do |comment| %>
+				<li class="commentArea" data-id="<%= comment.id %>">
+					<div class="commentTextArea">
+						<p class="commentText"><%= h comment.body %></p>
+					</div>
+					
+					<ul class="commentBottom">
+						<li><%= h comment.name %></li>
+						<li><%= comment.date_time %></li>
+					</ul>
+					<span class="deleteCmd">[x]</span>
+				</li>
+			<% end %>
+		</ul>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+			$(".deleteCmd").click(function(){
+					var el = $(this).parent();
+					if(confirm("are you sure to delete?")){
+						$.post("/delete",{
+							id: el.data("id")
+							},function(){
+								el.fadeOut(800);
+							});
+						}
+					});
+		</script>
+	</div>
+</div>
