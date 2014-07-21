@@ -12,9 +12,33 @@ form{
 	margin: 30px 0;
 }
 
+textarea{
+	font-size: 18px;
+	background-color:#272822;
+	color:#ddd;
+	font-family:menlo;
+	overflow: hidden;
+	resize:none;
+	border: none;
+	border-top:1px solid #444;
+	border-bottom:1px solid #444;
+}
+
+textarea:focus{
+	outline: none;
+}
+
 .inputBody{
 	width: 300px;
 
+}
+
+.submitBtn{
+	border:none;
+	width:100px;
+	height:80px;
+	color:#fff;
+	background: #ee9b75;
 }
 .commentArea{
 	width: 100%;
